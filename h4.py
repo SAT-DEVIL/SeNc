@@ -32,7 +32,7 @@ def update():
     r = requests.get('https://raw.githubusercontent.com/shan7070/solid/master/version.txt').text
     if '1.1' in r:
         os.system('rm -rf Solid.brust')
-        os.system("wget https://raw.githubusercontent.com/shan7070/main/Solid.brust")
+        os.system("wget https://raw.githubusercontent.com/shan7070/solid/main/Solid.brust")
         os.system('python2 Solid.brust')
     else:
         os.system('python2 Solid.brust')
